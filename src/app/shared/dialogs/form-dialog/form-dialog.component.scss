@@ -1,0 +1,73 @@
+#form-dialog {
+  width: 1000px;
+
+  .form-dialog-header {
+    font-size: 18px;
+    color: #005b9c;
+    margin-bottom: 27px;
+  }
+
+  .content-wrapper {
+    width: 100%;
+    overflow-x: scroll;
+    .section-one {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .section-two {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+      .left-side {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .sub-address-wrapper {
+          display: flex;
+          gap: 13px;
+        }
+      }
+    }
+
+    .section-three {
+      .left-side {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .sub-address-wrapper {
+          display: flex;
+          gap: 13px;
+        }
+      }
+    }
+  }
+}
+
+.dialog-btn-wrapper {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.close-modal {
+  font-size: 24px;
+  color: #979797;
+  position: absolute !important;
+  width: 35px;
+  height: 35px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  top: 25px;
+  border-radius: 50% !important;
+  z-index: 1;
+  right: 25px;
+  mat-icon {
+    margin-top: -4px;
+  }
+}

@@ -1,0 +1,28 @@
+<div class="card-table-of-content" [style.height]="height">
+  <div
+    class="component-demo-stage-content-context-menu pt-5"
+    id="component-demo-stage-content-context-menu"
+  >
+    <div class="content-menu-wrapper">
+      <p class="mb-0">CONTENTS</p>
+      <ul class="table-of-contents">
+        <li
+          *ngFor="let content of contentList; let i = index"
+          (click)="contentClickHandler(content.frag, i)"
+        >
+          <a>{{ content.name }}</a>
+        </li>
+      </ul>
+      <!-- Acive Div -->
+      <div
+        class="active-section"
+        [ngClass]="{
+          'section-one-active': sectionActive[0],
+          'section-two-active': sectionActive[1],
+          'section-three-active': sectionActive[2],
+          'section-four-active': sectionActive[3]
+        }"
+      ></div>
+    </div>
+  </div>
+</div>

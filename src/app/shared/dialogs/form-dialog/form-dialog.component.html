@@ -1,0 +1,135 @@
+<div id="form-dialog">
+  <button mat-icon-button mat-dialog-close class="close-modal">
+    <mat-icon class="material-icons-outlined" (click)="onClose()"
+      >close</mat-icon
+    >
+  </button>
+  <div class="form-dialog-header">Modal Lightbox Complex ag-Grid</div>
+
+  <div class="content-wrapper">
+    <div class="section-one">
+      <ssnc-form-field [hasIcon]="true" [iconName]="'search'"></ssnc-form-field>
+      <ssnc-form-field
+        [formFieldName]="'Label Two'"
+        [defaultValue]="'Content Label Two'"
+      ></ssnc-form-field>
+      <ssnc-form-field
+        [formFieldName]="'Label Three'"
+        [defaultValue]="'Content Label Three'"
+      ></ssnc-form-field>
+      <ssnc-form-field
+        [formFieldName]="'Investor Name'"
+        [defaultValue]="'Hedge Fund Global Custodian'"
+      ></ssnc-form-field>
+      <ssnc-datepicker
+        [width]="'300px'"
+        [defaultDate]="date"
+        [fontSize]="'20px'"
+      ></ssnc-datepicker>
+      <ssnc-form-field
+        [formFieldName]="'Trade Amount'"
+        [defaultValue]="'111222333789'"
+      ></ssnc-form-field>
+    </div>
+    <div style="height: 20px"></div>
+    <div class="section-two">
+      <div class="left-side">
+        <ssnc-form-field
+          [isDefaultTextArea]="true"
+          [formFieldName]="'Address line one'"
+          [defaultValue]="'Platina Tower, Mehrauli-Gurgaon'"
+          [width]="'645px'"
+          [textAreaMinRow]="'1'"
+          [textAreaMaxRow]="'5'"
+        ></ssnc-form-field>
+        <ssnc-form-field
+          [isDefaultTextArea]="true"
+          [formFieldName]="'Address line two'"
+          [defaultValue]="'A Block, DLF Phase 1, Sector 28'"
+          [width]="'645px'"
+          [textAreaMinRow]="'1'"
+          [textAreaMaxRow]="'5'"
+        ></ssnc-form-field>
+        <div class="sub-address-wrapper">
+          <ssnc-form-field
+            [formFieldName]="'City'"
+            [defaultValue]="'Gurugram, Haryana'"
+            [width]="'235px'"
+          ></ssnc-form-field>
+          <ssnc-form-field
+            [isDropdown]="true"
+            [dropdownList]="countryList"
+            [formControl]="countryControl"
+            [width]="'235px'"
+          ></ssnc-form-field>
+          <ssnc-form-field
+            [formFieldName]="'Zip / Postcode'"
+            [defaultValue]="'122001'"
+            [width]="'150px'"
+          ></ssnc-form-field>
+        </div>
+      </div>
+      <div class="right-side">
+        <ssnc-form-field
+          [formFieldName]="'Comments'"
+          [textAreaMinRow]="'8'"
+          [textAreaMaxRow]="'50'"
+          [width]="'300px'"
+          [isDefaultTextArea]="true"
+        ></ssnc-form-field>
+      </div>
+    </div>
+    <div class="spacer"></div>
+    <ssnc-checkbox
+      [checkBoxDesc]="'Different Mailing Address'"
+      (isChecked)="setCheckboxValue($event)"
+    ></ssnc-checkbox>
+    <div *ngIf="checkboxValue" class="section-three">
+      <div class="spacer"></div>
+      <div class="left-side">
+        <ssnc-form-field
+          [isDefaultTextArea]="true"
+          [formFieldName]="'Address line one'"
+          [defaultValue]="'Platina Tower, Mehrauli-Gurgaon'"
+          [width]="'645px'"
+          [textAreaMinRow]="'1'"
+          [textAreaMaxRow]="'5'"
+        ></ssnc-form-field>
+        <ssnc-form-field
+          [isDefaultTextArea]="true"
+          [formFieldName]="'Address line two'"
+          [defaultValue]="'A Block, DLF Phase 1, Sector 28'"
+          [width]="'645px'"
+          [textAreaMinRow]="'1'"
+          [textAreaMaxRow]="'5'"
+        ></ssnc-form-field>
+        <div class="sub-address-wrapper">
+          <ssnc-form-field
+            [formFieldName]="'City'"
+            [defaultValue]="'Gurugram, Haryana'"
+            [width]="'235px'"
+          ></ssnc-form-field>
+          <ssnc-form-field
+            [isDropdown]="true"
+            [dropdownList]="countryList"
+            [formControl]="countryControl"
+            [width]="'235px'"
+          ></ssnc-form-field>
+          <ssnc-form-field
+            [formFieldName]="'Zip / Postcode'"
+            [defaultValue]="'122001'"
+            [width]="'150px'"
+          ></ssnc-form-field>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="dialog-btn-wrapper" style="margin-top: 20px">
+    <ssnc-button
+      [buttonType]="'tertiary'"
+      [buttonName]="'Cancel'"
+    ></ssnc-button>
+    <ssnc-button [buttonType]="'primary'" [buttonName]="'Submit'"></ssnc-button>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+.ag-grid-icons {
+  color: #5275a1;
+  cursor: pointer;
+}
+
+.ag-grid-icon-cell-style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 15px;
+}
+
+// Dark Theme
+.ag-grid-icons-edit-dark-theme {
+  color: #02a9f4;
+}
+
+.ag-grid-icons-lock-dark-theme {
+  color: #ed7981;
+}
+
+.ag-grid-icons-alarm-dark-theme {
+  color: #eeb767;
+}

@@ -1,0 +1,42 @@
+#grid-dialog {
+  width: 1280px;
+
+  .grid-dialog-header {
+    font-size: 18px;
+    color: #005b9c;
+    margin-bottom: 27px;
+  }
+
+  .content-wrapper {
+    .form-wrapper {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 50px;
+    }
+  }
+}
+
+.popup-footer {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  color: #5275a1;
+}
+
+.close-modal {
+  font-size: 24px;
+  color: #979797;
+  position: absolute !important;
+  width: 35px;
+  height: 35px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  top: 25px;
+  border-radius: 50% !important;
+  z-index: 1;
+  right: 25px;
+  mat-icon {
+    margin-top: -4px;
+  }
+}

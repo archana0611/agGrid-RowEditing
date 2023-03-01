@@ -1,0 +1,130 @@
+.status-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  z-index: 10000;
+}
+
+.status-approved {
+  height: 16px;
+  width: 96px;
+  background-color: #1ac7a1 !important;
+  color: white;
+  border-radius: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.status-approved-icon {
+  font-size: 14px;
+  color: white;
+  background-color: #1ac7a1 !important;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15px;
+  height: 15px;
+}
+
+.status-approved-incomplete {
+  width: 15px;
+  height: 15px;
+  background-color: #1ac7a1 !important;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+
+.status-pending {
+  height: 16px;
+  width: 96px;
+  background-color: #f79c5c !important;
+  color: white;
+  border-radius: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.status-pending-icon {
+  font-size: 14px;
+  color: white;
+  background-color: #f79c5c !important;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15px;
+  height: 15px;
+}
+
+.status-pending-incomplete {
+  width: 15px;
+  height: 15px;
+  background-color: #f79c5c !important;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+
+.status-recieved {
+  height: 16px;
+  width: 96px;
+  background-color: #02a9f4 !important;
+  color: white;
+  border-radius: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.status-recieved-icon {
+  font-size: 14px;
+  color: white;
+  background-color: #02a9f4 !important;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15px;
+  height: 15px;
+}
+
+.status-recieved-incomplete {
+  width: 15px;
+  height: 15px;
+  background-color: #02a9f4 !important;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+
+.status-priced {
+  height: 16px;
+  width: 96px;
+  background-color: #6f82d9 !important;
+  color: white;
+  border-radius: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.status-priced-icon {
+  font-size: 14px;
+  color: white;
+  background-color: #6f82d9 !important;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15px;
+  height: 15px;
+}
+
+.status-priced-incomplete {
+  width: 15px;
+  height: 15px;
+  background-color: #6f82d9 !important;
+  border-radius: 50%;
+  opacity: 0.5;
+}

@@ -1,0 +1,92 @@
+.card-table-of-content {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--content-bg);
+  border-radius: 8px;
+  padding: 24px;
+  box-sizing: border-box;
+  overflow: hidden;
+  overflow-y: auto;
+  box-shadow: var(--table-of-content-box-shadow);
+}
+
+.component-demo-stage-content {
+  width: 80%;
+}
+
+.component-demo-stage-content-context-menu .table-of-contents li {
+  padding: 0;
+}
+
+.component-demo-stage-content-context-menu .table-of-contents a {
+  color: var(--table-of-content-text);
+  font-size: 16px;
+  font-weight: 400;
+  // border-left: 2px solid rgba(0, 0, 0, 0.12);
+  padding-left: 10px;
+}
+
+.component-demo-stage-content-context-menu .table-of-contents a:hover,
+.component-demo-stage-content-context-menu .table-of-contents a.active {
+  border-left-color: #222222;
+}
+
+.content-menu-wrapper p {
+  color: var(--sidebar-header-text);
+}
+
+.table-of-contents {
+  width: 167px;
+  margin-top: 6px;
+}
+
+.table-of-contents li {
+  cursor: pointer;
+  white-space: nowrap;
+  height: 28px;
+  // border-left: 2px solid var(--sidebar-bar);
+  // border-radius: 0px 8px 8px 0px;
+  color: var(--table-of-content-text);
+  border: 1px solid transparent;
+}
+
+.table-of-contents li:hover {
+  border-radius: 90px;
+  background-color: var(--table-of-content-hover);
+}
+.table-of-contents li.active {
+  // color: var(--table-of-content-text-active);
+  // border-left: 2px solid var(--sidebar-bar-active);
+  // background: var(--sidebar-bar-active-bg);
+  border-radius: 90px;
+  border: 1px solid var(--table-of-content-active-border);
+}
+
+.table-of-contents a {
+  line-height: 25px;
+}
+
+.active-section {
+  position: absolute;
+  top: 45px;
+  width: 167px;
+  height: 28px;
+  border-radius: 90px;
+  border: 1px solid var(--table-of-content-active-border);
+  transform: translateY(0px);
+  transition-duration: 500ms, 200ms;
+  transition-property: transform, opacity, height;
+  transition-timing-function: cubic-bezier(0.2, 0, 0, 1);
+}
+
+.section-one-active {
+  transform: translateY(0px);
+}
+.section-two-active {
+  transform: translateY(28px);
+}
+.section-three-active {
+  transform: translateY(56px);
+}
+.section-four-active {
+  transform: translateY(84px);
+}

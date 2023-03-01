@@ -1,0 +1,53 @@
+
+<h2 class="modal-header">Preference</h2>
+<div class="input-wrap">
+    <div class="input-box">
+  
+  <ssnc-form-field 
+  [formFieldName]="'Preferred Currency'"
+  [formFieldPlaceholder]="'USD'" id="ssnc-form-field1"
+></ssnc-form-field>
+</div>
+<div class="input-box">
+<ssnc-form-field 
+  [formFieldName]="'Landing Page'"
+  [formFieldPlaceholder]="'Home'" id="ssnc-form-field2"
+></ssnc-form-field>
+</div>
+<div class="input-box">
+<ssnc-form-field 
+  [formFieldName]="'Email'"
+  [formFieldPlaceholder]="'cramirez@gmail.com'"  id="ssnc-form-field3"
+></ssnc-form-field>
+</div> 
+</div>
+<div class="row justify-flexend" style="margin:0 0 20px 0;">
+    <ssnc-button
+    [buttonType]="'primary'"
+    [buttonName]="'Add User'"
+  ></ssnc-button>
+</div>
+
+ 
+      
+          
+          <div style="height: 441px;">  <ssnc-ag-grid>    <ag-grid-angular
+              class="ag-theme-alpine"
+              [rowData]="rowData"
+              [columnDefs]="columnDefs"
+              [defaultColDef]="defaultColDef"
+              [frameworkComponents]="frameworkComponents"
+              [gridOptions]="fileGridOptions"
+              style="width: 100%; height: 100%"
+            ></ag-grid-angular>  </ssnc-ag-grid>
+           
+          </div>
+          <!-- <ssnc-button
+          [buttonType]="'tertiary'"
+          [buttonName]="'Cancel'"
+        ></ssnc-button>
+        <ssnc-button
+        [buttonType]="'primary'"
+        [buttonName]="'Save'" [disabled]="true" ></ssnc-button> -->
+
+ 

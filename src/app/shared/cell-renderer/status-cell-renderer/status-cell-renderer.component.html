@@ -1,0 +1,85 @@
+<!-- Approved Pill -->
+<div class="status-wrapper" *ngIf="value == 'Approved'">
+  <mat-icon
+    class="status-priced-icon"
+    matTooltip="Priced"
+    matTooltipPosition="above"
+    >check</mat-icon
+  >
+  <mat-icon
+    class="status-recieved-icon"
+    matTooltip="Recieved"
+    matTooltipPosition="above"
+    >check</mat-icon
+  >
+  <mat-icon
+    class="status-pending-icon"
+    matTooltip="Pending"
+    matTooltipPosition="above"
+    >check</mat-icon
+  >
+  <div class="status-approved">Approved</div>
+</div>
+
+<!-- Pending Pill -->
+<div class="status-wrapper" *ngIf="value == 'Pending'">
+  <mat-icon
+    class="status-priced-icon"
+    matTooltip="Priced"
+    matTooltipPosition="above"
+    >check</mat-icon
+  >
+  <mat-icon
+    class="status-recieved-icon"
+    matTooltip="Recieved"
+    matTooltipPosition="above"
+    >check</mat-icon
+  >
+  <div class="status-pending">Pending</div>
+  <div
+    class="status-approved-incomplete"
+    matTooltip="Approved"
+    matTooltipPosition="above"
+  ></div>
+</div>
+
+<!-- Recieved Pill -->
+<div class="status-wrapper" *ngIf="value == 'Recieved'">
+  <mat-icon
+    class="status-priced-icon"
+    matTooltip="Priced"
+    matTooltipPosition="above"
+    >check</mat-icon
+  >
+  <div class="status-recieved">Recieved</div>
+  <div
+    class="status-pending-incomplete"
+    matTooltip="Pending"
+    matTooltipPosition="above"
+  ></div>
+  <div
+    class="status-approved-incomplete"
+    matTooltip="Approved"
+    matTooltipPosition="above"
+  ></div>
+</div>
+
+<!-- Priced Pill -->
+<div class="status-wrapper" *ngIf="value == 'Priced'">
+  <div class="status-priced">Priced</div>
+  <div
+    class="status-recieved-incomplete"
+    matTooltip="Recieved"
+    matTooltipPosition="above"
+  ></div>
+  <div
+    class="status-pending-incomplete"
+    matTooltip="Pending"
+    matTooltipPosition="above"
+  ></div>
+  <div
+    class="status-approved-incomplete"
+    matTooltip="Approved"
+    matTooltipPosition="above"
+  ></div>
+</div>

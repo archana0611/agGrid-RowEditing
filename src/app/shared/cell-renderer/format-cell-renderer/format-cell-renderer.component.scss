@@ -1,0 +1,30 @@
+.ag-grid-format-cell-style {
+  display: flex;
+  height: 100%;
+  gap: 10px;
+  align-items: center;
+  .icon-powerpoint {
+    width: 26px;
+    height: 24px;
+    background: url("../../../../assets/img/PowerPoint-icon.svg") no-repeat;
+  }
+  .icon-word {
+    width: 21px;
+    height: 24px;
+    background: url("../../../../assets/img/generic-export-icon-word.svg")
+      no-repeat;
+  }
+  .icon-pdf {
+    width: 22px;
+    height: 24px;
+    background: url("../../../../assets/img/generic-export-icon-pdf.svg")
+      no-repeat;
+    position: relative;
+  }
+  .icon-xls {
+    width: 21px;
+    height: 24px;
+    background: url("../../../../assets/img/generic-export-icon-xls.svg")
+      no-repeat;
+  }
+}
