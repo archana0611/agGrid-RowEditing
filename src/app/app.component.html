@@ -1,41 +1,4 @@
-<!-- <button mat-button (click)="openDialog()">Open dialog</button> -->
-<!-- <h2 class="modal-header">Preference</h2>
-   <div class="">
-     
-     <ssnc-form-field 
-     [formFieldName]="'Preferred Currency'"
-     [formFieldPlaceholder]="'USD'"
-   ></ssnc-form-field>
-   <ssnc-form-field 
-     [formFieldName]="'Landing Page'"
-     [formFieldPlaceholder]="'Home'"
-   ></ssnc-form-field>
-   <ssnc-form-field 
-     [formFieldName]="'Email'"
-     [formFieldPlaceholder]="'cramirez@gmail.com'"
-   ></ssnc-form-field>
-   </div> -->
-   <ssnc-button
-   [buttonType]="'primary'"
-   [buttonName]="'Add User'"
-   ></ssnc-button>
-   <div style="height: 400px">
-      <ssnc-ag-grid>    <ag-grid-angular
-         class="ag-theme-alpine"
-         [rowData]="rowData"
-         [columnDefs]="columnDefs"
-         [defaultColDef]="defaultColDef"
-         [frameworkComponents]="frameworkComponents"
-         [gridOptions]="fileGridOptions"
-         [editType]="editType"
-         style="width: 100%; height: 100%"
-         ></ag-grid-angular>  
-      </ssnc-ag-grid>
-   </div>
-   <ssnc-button
-   [buttonType]="'tertiary'"
-   [buttonName]="'Cancel'"
-   ></ssnc-button>
-   <ssnc-button
-   [buttonType]="'primary'"
-   [buttonName]="'Save'" [disabled]="true" ></ssnc-button>
+<ssnc-button
+            [buttonType]="'primary'"  (click)="openDialog()"
+            [buttonName]="'GBI Modal'"
+          ></ssnc-button>

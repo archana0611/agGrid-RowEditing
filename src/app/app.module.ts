@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { AgGridModule } from 'ag-grid-angular';
 import { GocentralDesignkitModule } from 'gocentral-design';
 import { MatIconModule } from '@angular/material/icon';
@@ -28,6 +30,7 @@ import { EditingDialogComponent } from './editing-dialog/editing-dialog.componen
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     GocentralDesignkitModule,
     AgGridModule,

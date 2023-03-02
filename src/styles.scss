@@ -1,28 +1,118 @@
-@import 'ag-grid-community/styles/ag-grid.css';
+@import "ag-grid-community/styles/ag-grid.css";
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
-@import 'ag-grid-community/styles/ag-theme-alpine.css';/* You can add global styles to this file, and also import other style files */
-.row{display: flex;align-items: flex-start; flex-wrap: wrap;}
-*{padding: 0;margin: 0;box-sizing: border-box;}
+@import "ag-grid-community/styles/ag-theme-alpine.css"; /* You can add global styles to this file, and also import other style files */
+.row {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 .modal-header {
-    color: #475f7b;
-    border-radius: 0;
-    font-weight: normal;
-    font-size: 24px;
-    padding: 0 0 15px 0;
-    border-bottom: 1px solid #cbd5e0;
-    margin: 0 0 10px 0;
+  color: #475f7b;
+  border-radius: 0;
+  font-weight: normal;
+  font-size: 24px;
+  padding: 0 0 15px 0;
+  border-bottom: 1px solid #cbd5e0;
+  margin: 0 0 10px 0;
 }
-.input-wrap{display: flex;align-items: flex-start; flex-wrap: wrap; padding:10px 0 20px 0;}
-.input-box{width:30%;padding:0 10px;
-    #ssnc-form-field .mat-form-field{width: 100%!important;}
+.input-wrap {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 10px 0 20px 0;
+  .input-box {
+    width: 30%;
+    padding: 0 10px;
+    max-width: 300px;
+    #ssnc-form-field .mat-form-field {
+      width: 100% !important;
+    }
+  }
 }
-.cdk-overlay-pane{width: 90vw;max-width:90vw!important;}
-.justify-flexend{
-    justify-content: flex-end;
+
+.display-flex {
+  display: flex;
 }
-.mat-mdc-dialog-container .mdc-dialog__surface{    position: relative;
-    padding: 50px!important;
-    border-radius: 24px!important;
-    box-shadow: 0 11px 15px -7px #0003, 0 24px 38px 3px #00000024, 0 9px 46px 8px #0000001f;
-    background-color: #fff;}
+.cdk-overlay-pane {
+  width: 90vw;
+  max-width: 90vw !important;
+}
+.justify-flexend {
+  justify-content: flex-end;
+}
+.mat-mdc-dialog-container .mdc-dialog__surface {
+  position: relative;
+  padding: 50px !important;
+  border-radius: 24px !important;
+  box-shadow: 0 11px 15px -7px #0003, 0 24px 38px 3px #00000024,
+    0 9px 46px 8px #0000001f;
+  background-color: #fff;
+}
+.mat-autocomplete-panel {
+  background-color: #fff !important;
+}
+.ag-header-cell-text {
+  text-transform: uppercase;
+  font-size: 15px;
+}
+.ag-theme-alpine .ag-cell,
+.ag-theme-alpine .ag-full-width-row .ag-cell-wrapper.ag-row-group {
+  font-family: "Lato", sans-serif !important;
+}
+.ag-theme-alpine .ag-header-cell,
+.ag-theme-alpine .ag-cell {
+  color: #475f7b;
+  text-decoration: none;
+  font-size: 15px !important;
+}
+
+.user-form {
+  border-radius: 12px;
+  padding: 10px;
+  position: relative;
+  z-index: 1;
+  bottom: 2px;
+  background: #ffffff;
+  box-shadow: 0px 20px 32px rgb(64 110 184 / 24%),
+    0px 2px 8px rgb(64 110 184 / 8%);
+  .inner-wrap {
+    border-radius: 8px;
+    padding: 10px 0;
+    background-color: #f5f8fc;
+    flex-wrap: wrap;
+  }
+  .input-box {
+    padding: 0 10px;
+    #ssnc-form-field .mat-form-field {
+      width: 100% !important;
+    }
+  }
+}
+#gocentral-ag-grid {
+  .box-panel {
+    box-shadow: none;
+    padding: 0;
+  }
+}
+.close-modal {
+  font-size: 24px;
+  color: #979797;
+  background-color: transparent;
+  position: absolute !important;
+  width: 35px;
+  height: 35px;
+  align-items: center;
+  border: 0;
+  justify-content: center;
+  display: flex;
+  top: 25px;
+  border-radius: 50% !important;
+  z-index: 1;
+  right: 25px;
+}

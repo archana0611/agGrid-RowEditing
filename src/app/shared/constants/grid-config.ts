@@ -32,7 +32,6 @@ function ragRenderer(params: any) {
 export const rowClass = 'white-bg';
 
 export const defaultColDef = {
-  minWidth: 200,
   filter: true,
   SingleClickEdit: true,
   sortable: true,
@@ -67,49 +66,64 @@ export const defaultColDefSub = {
 export const columnDefs = [
   {
     field: 'client',
+    minWidth:300,
    
-    headerName: 'Client',
+    headerName: 'CLIENT',
   },
   {
     field: 'fund',
     headerName: 'Fund',
+    minWidth:250,
+    maxWidth:250,
     cellClass: 'align-left',
   },
   {
     field: 'entity_id',
     headerName: 'Entity ID / Account',
     cellClass: 'align-left',
+    minWidth:140,
   },
   {
     field: 'name',
     headerName: 'Name',
     cellClass: 'align-left',
+    minWidth:180,
+    maxWidth:180
+
   },
 
   {
     field: 'email',
     headerName: 'Email',
     cellClass: 'align-left',
+    minWidth:180,
+    maxWidth:180
+
   },
   {
     field: 'contact_type',
     headerName: 'Contact Type',
     headerClass: 'align-left',
+    minWidth:180,
+    maxWidth:180
   },
   {
     field: 'status',
     headerName: 'Status',
     headerClass: 'align-left',
+    minWidth:120,
+    maxWidth:120
   },
   {
     field: 'actions',
     headerName: 'Actions',
+    minWidth:120,
+    maxWidth:120,
+
     
     headerClass: 'align-center justify-center',
     cellClass:'align-center justify-center',
     cellRenderer: 'iconCellRendererComponent',
-  
-    
 
     cellRendererParams: {
       label: 'anchor',
